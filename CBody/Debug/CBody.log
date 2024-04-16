@@ -1,0 +1,14 @@
+﻿  main.cpp
+CShere.obj : error LNK2001: неразрешенный внешний символ "public: virtual double __thiscall CBody::GetDensity(void)const " (?GetDensity@CBody@@UBENXZ).
+main.obj : error LNK2001: неразрешенный внешний символ "public: virtual double __thiscall CBody::GetDensity(void)const " (?GetDensity@CBody@@UBENXZ).
+CCompound.obj : error LNK2001: неразрешенный внешний символ "public: virtual double __thiscall CBody::GetDensity(void)const " (?GetDensity@CBody@@UBENXZ).
+CCone.obj : error LNK2001: неразрешенный внешний символ "public: virtual double __thiscall CBody::GetDensity(void)const " (?GetDensity@CBody@@UBENXZ).
+CCylinder.obj : error LNK2001: неразрешенный внешний символ "public: virtual double __thiscall CBody::GetDensity(void)const " (?GetDensity@CBody@@UBENXZ).
+CParallelepiped.obj : error LNK2001: неразрешенный внешний символ "public: virtual double __thiscall CBody::GetDensity(void)const " (?GetDensity@CBody@@UBENXZ).
+CShere.obj : error LNK2001: неразрешенный внешний символ "public: virtual double __thiscall CBody::GetVolume(void)const " (?GetVolume@CBody@@UBENXZ).
+main.obj : error LNK2001: неразрешенный внешний символ "public: virtual double __thiscall CBody::GetVolume(void)const " (?GetVolume@CBody@@UBENXZ).
+CCompound.obj : error LNK2001: неразрешенный внешний символ "public: virtual double __thiscall CBody::GetVolume(void)const " (?GetVolume@CBody@@UBENXZ).
+CCone.obj : error LNK2001: неразрешенный внешний символ "public: virtual double __thiscall CBody::GetVolume(void)const " (?GetVolume@CBody@@UBENXZ).
+CCylinder.obj : error LNK2001: неразрешенный внешний символ "public: virtual double __thiscall CBody::GetVolume(void)const " (?GetVolume@CBody@@UBENXZ).
+CParallelepiped.obj : error LNK2001: неразрешенный внешний символ "public: virtual double __thiscall CBody::GetVolume(void)const " (?GetVolume@CBody@@UBENXZ).
+D:\1`University\ООП\lw4\CBody\Debug\CBody.exe : fatal error LNK1120: неразрешенных внешних элементов: 2
