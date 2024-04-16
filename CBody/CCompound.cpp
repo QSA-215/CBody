@@ -1,5 +1,5 @@
 #include "CCompound.h"
-
+//меопюбхкэмше бшвхякемхъ!!!
 double CCompound::GetDensity() const
 {
 	if (m_compoundBody.empty())
@@ -10,7 +10,7 @@ double CCompound::GetDensity() const
 		totalDensity += body->GetDensity();
 	return totalDensity;
 };
-
+//меопюбхкэмше бшвхякемхъ!!!
 double CCompound::GetVolume() const
 {
 	if (m_compoundBody.empty())

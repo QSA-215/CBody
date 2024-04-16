@@ -8,6 +8,29 @@
 #include "CParallelepiped.h"
 #include "CSphere.h"
 
+CBody GetMostMassBody(const std::vector<std::unique_ptr<CBody>>& bodies)
+{
+	CBody mostMassBody = *bodies[0];
+	for (const auto& body : bodies)
+		if (body->GetMass() > mostMassBody.GetMass())
+			mostMassBody = *body;
+	return mostMassBody;
+};
+
+CBody GetLeastMassBodyInWater(const std::vector<std::unique_ptr<CBody>>& bodies)
+{
+	const double G = 9.8;
+	const double WaterDensity = 1000;
+
+	CBody LessMassBodyInWater = *bodies[0];
+	for (const auto& body : bodies)
+		if (((body->GetDensity() - WaterDensity) * body->GetVolume()) < 
+			((LessMassBodyInWater.GetDensity() - WaterDensity) * LessMassBodyInWater.GetVolume()))
+			LessMassBodyInWater = *body;
+
+	return LessMassBodyInWater;
+};
+
 void GetInfo(const std::vector<std::unique_ptr<CBody>>& bodies)
 {
 	for (const auto& body : bodies)
@@ -18,8 +41,13 @@ void AddBody(std::istringstream& lineStream, std::vector<std::unique_ptr<CBody>>
 {
 	std::string command;
 	lineStream >> command;
-	if (command == "compound")
+	if ((command == "compound") || (command == "}"))
 	{
+		CCompound compoundBody;
+		
+
+
+		bodies.push_back(std::make_unique<CBody>(compoundBody));
 	}
 	else if (command == "cone")
 	{
@@ -59,7 +87,13 @@ int main()
 		lineStream.str(line);
 		AddBody(lineStream, bodies);
 	}
+	if (bodies.empty())
+		return 0;
+
 	GetInfo(bodies);
+	std::cout << "The body with the highest mass is:" << std::endl << GetMostMassBody(bodies).ToString() << std::endl;
+	std::cout << "The body that will weigh the least when completely submerged in water:" 
+		<< std::endl << GetLeastMassBodyInWater(bodies).ToString() << std::endl;
 
 	return 0;
 }

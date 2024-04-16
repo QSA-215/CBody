@@ -1,4 +1,6 @@
-﻿  main.cpp
+﻿  CCompound.cpp
+  main.cpp
+  Создание кода...
 CShere.obj : error LNK2001: неразрешенный внешний символ "public: virtual double __thiscall CBody::GetDensity(void)const " (?GetDensity@CBody@@UBENXZ).
 main.obj : error LNK2001: неразрешенный внешний символ "public: virtual double __thiscall CBody::GetDensity(void)const " (?GetDensity@CBody@@UBENXZ).
 CCompound.obj : error LNK2001: неразрешенный внешний символ "public: virtual double __thiscall CBody::GetDensity(void)const " (?GetDensity@CBody@@UBENXZ).
