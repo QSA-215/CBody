@@ -1,11 +1,4 @@
-﻿  CBody.cpp
-  CCompound.cpp
-  CCone.cpp
-  CCylinder.cpp
-  CParallelepiped.cpp
-  CShere.cpp
-  CSolidBody.cpp
-  main.cpp
+﻿  main.cpp
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory(1893,9): error C2259: "CBody": невозможно создать экземпляр абстрактного класса
 D:\1`University\ООП\lw4\CBody\CBody\CBody.h(4): message : см. объявление "CBody"
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory(1893,9): message : из-за следующих членов:
@@ -25,5 +18,4 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.2
           [
               _Ty=CBody
           ]
-D:\1`University\ООП\lw4\CBody\CBody\main.cpp(47): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::shared_ptr<CBody> std::make_shared<CBody,CCompound&>(CCompound &)"
-  Создание кода...
+D:\1`University\ООП\lw4\CBody\CBody\main.cpp(42): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::shared_ptr<CBody> std::make_shared<CBody,CCone>(CCone &&)"
