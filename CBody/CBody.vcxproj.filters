@@ -44,10 +44,10 @@
     <ClInclude Include="CBody.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="CSphere.h">
+    <ClInclude Include="CCompound.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="CParallelepiped.h">
+    <ClInclude Include="CFigures.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="CCone.h">
@@ -56,10 +56,13 @@
     <ClInclude Include="CCylinder.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="CParallelepiped.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
     <ClInclude Include="CSolidBody.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="CCompound.h">
+    <ClInclude Include="CSphere.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

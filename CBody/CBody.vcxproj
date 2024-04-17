@@ -153,6 +153,7 @@
     <ClInclude Include="CCompound.h" />
     <ClInclude Include="CCone.h" />
     <ClInclude Include="CCylinder.h" />
+    <ClInclude Include="CFigures.h" />
     <ClInclude Include="CSolidBody.h" />
     <ClInclude Include="CParallelepiped.h" />
     <ClInclude Include="CSphere.h" />
